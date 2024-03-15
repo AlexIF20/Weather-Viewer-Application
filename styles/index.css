@@ -1,0 +1,529 @@
+ /* SECTION #1
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  Body si autocomplete*/
+
+body {
+    font: 16px;
+    background: #f3f5f6;
+  }
+  
+  .autocomplete-container {
+    /*the container must be positioned relative:*/
+    position: relative;
+    
+    margin-bottom: 32px;
+  }
+  
+  .autocomplete-container input {
+    width: calc(100% - 43px);
+    outline: none;
+    
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    padding-right: 31px;
+    font-size: 16px;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255);
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: calc(100% + 2px);
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
+    background: #ffffff; /* Set your desired background color */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: black;/*////////////////////*/
+    transition: background 1s ease-in-out;
+    width: 458px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: rgba(0, 0, 0, 0.25);/*////////////////////////*/
+    font-size: 25px;
+    
+  }
+  
+  
+  .clear-button {
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    
+    position: absolute;
+    right: 35px;
+    top: 0;
+  
+    height: 100%;
+    display: none;
+    align-items: center;
+  }
+  
+  .clear-button.visible {
+    display: flex;
+  }
+  
+  
+  .clear-button:hover {
+    color: rgb(0, 0, 0);
+  }
+
+
+
+  :root {
+    
+    background-image:url(https://miro.medium.com/v2/resize:fit:5120/1*GsImz-edoeuqCMfKxDus0w.jpeg);
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
+    --text_light: #fff;
+    --text_med: #53627c;
+    --text_dark: #1e2432;
+    --red: #ff1e42;
+    --darkred: #c3112d;
+    --orange: #ff8c00;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+   
+  input {
+    -webkit-appearance: none;
+  }
+   
+  button,
+  input {
+    border: none;
+    background: none;
+    outline: none;
+    color: inherit;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  body {
+    font: 1rem/1.3 "Roboto", sans-serif;
+    background: var(--bg_main);
+    color: var(--text_dark);
+    padding: 70px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+  }
+  
+  
+  /* SECTION #2
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  banner si buttonul de x*/
+
+  .top-banner {
+    color: var(--text_light);
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
+    background: #f0f0f0c3; /* Set your desired background color */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: black;
+    width: 525px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .heading {
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 0.02em;
+    padding: 0 0 30px 0;
+    text-align: center;
+  }
+  
+  .top-banner form {
+    position: relative;
+    align-items: center;
+    width: 500px;
+  }
+  
+  .top-banner form input {
+    font-size: 2rem;
+    height: 50px;
+    padding: 5px 5px 10px;
+    border: 3px solid;
+  }
+  
+  .top-banner form input::placeholder {
+    color: currentColor; 
+  }
+  
+  .top-banner form button {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 15px 20px;
+   
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
+    background: cyan; /* Set your desired background color */
+
+    border-radius: 8px;
+    color: black;
+    transition: background 0.3s ease-in-out;
+    margin-top: 48px;
+    margin-bottom: auto;
+    
+  }
+  
+  .top-banner form button:hover {
+    background: rgb(0, 114, 114);
+  }
+  
+  .top-banner form .msg {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    max-width: 450px;
+    min-height: 40px;
+  }
+  
+  
+   /* SECTION #3
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  Cardurile cu vremea din fiecare zi*/
+
+
+  .city-description {
+    font-size: 20x; /* Adjust font size as needed */
+    color: #000000; /* Adjust color as needed */
+    text-transform: capitalize;;
+  }
+
+
+  .ajax-section {
+    margin: 70px 0 20px;
+  }
+  
+  .ajax-section .cities {
+    display: grid;
+    grid-gap: 32px 20px;
+    
+  }
+  
+  .ajax-section .city {
+    position: relative;
+    padding: 40px 10%;
+    border-radius: 20px;
+    background: var(--text_light);
+    color: var(--text_med);
+    color: black;
+    font-size: 30px;
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
+  }
+  
+  .ajax-section .city::after {
+    content: '';
+    width: 90%;
+    height: 50px;
+    position: absolute;
+    bottom: -12px;
+    left: 5%;
+    z-index: -1;
+    opacity: 0.3;
+    border-radius: 20px;
+    background: var(--text_light);
+  }
+  
+  .ajax-section figcaption {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: black;
+    font-size: 20px;
+    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
+  }
+  
+  .ajax-section .city-temp {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--text_dark);
+  }
+  
+  .ajax-section .city sup {
+    font-size: 0.5em;
+  }
+  
+  .ajax-section .city-name sup {
+    padding: 0.2em 0.6em;
+    border-radius: 30px;
+    color: var(--text_light);
+    background: var(--orange);
+  }
+
+  
+  
+  .ajax-section .city-icon {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    body {
+      padding: 30px;
+    }
+    
+    .ajax-section .cities {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .heading,
+    .ajax-section .city-temp {
+      font-size: 3rem;
+    }
+    
+    .ajax-section {
+      margin-top: 20px;
+    }
+    
+    .top-banner form {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .top-banner form input,
+    .top-banner form button {
+      width: 100%;
+    }
+  
+    .top-banner form button {
+      margin: 20px 0 0 0;
+    }
+    
+    .top-banner form .msg {
+      position: static;
+      max-width: none;
+      min-height: 0;
+      margin-top: 10px;
+    }
+  
+    .ajax-section .cities {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    body {
+      padding: 15px;
+    }
+    
+    .ajax-section .cities {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+
+
+
+  /* SECTION #4
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  li si loader-ul pentru cand se incarca pagina*/
+
+
+  li {
+    position: relative;
+  }
+  
+  li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    background-size: cover;
+    background-position: top right; /* Adjusted the background position */
+    border-radius: 20px;
+    text-align: right;
+    
+    
+  }
+  
+  li::before {
+    /* ... other styles ... */
+    background-image: var(--background-image);
+
+  }
+
+
+  .loader {
+  width: 48px;
+  height: 48px;
+  background: #FF3D00;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotationBack 1s ease-in-out infinite reverse;
+
+}
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  transform: rotate(45deg);
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: #FF3D00;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #FFF;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+ /* SECTION #5
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  Butonul de favorite*/
+
+.favorite-button {
+  font-size: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: black; /* Set the initial color for an empty heart */
+  transition: color 0.3s ease-in-out; /* Add a transition for a smooth color change */
+}
+
+.favorite-button:hover {
+  color: rgb(209, 119, 119); /* Set the color for a filled heart on hover */
+}
+
+
+.favorite-button.favorite {
+  color: red; /* Set the color for a filled heart when it's in favorites */
+}
+
+.city-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* SECTION #6
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  Lista de favorite de dupa ce apas pe textbox*/
+
+
+.city-container {
+  margin-right: auto;
+  margin-left: auto;
+  list-style: none;
+  
+  padding: 10px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px; /* Set your desired max-width */
+
+  text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
+  background: #f0f0f0c3; /* Set your desired background color */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: black;
+
+  font-size: 20px;
+
+}
+
+.h2-favorite{
+  padding: 30px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.favorite-list {
+  /* Add some padding to the favorite list */
+  padding: 10px;
+}
+
+.favorite-list div {
+  /* Add some padding and size to each favorite list item */
+  padding: 8px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.favorite-list div:hover {
+  /* Change background color on hover */
+  background-color: #f0f0f0;
+}
+
