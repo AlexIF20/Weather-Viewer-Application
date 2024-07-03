@@ -158,7 +158,7 @@ function addressAutocomplete(containerElement, callback, options) {
     var promise = new Promise((resolve, reject) => {
       currentPromiseReject = reject;
 
-      var apiKey = "84f6e6abf11b4bc480f75930bc2a11be";
+      var apiKey = "Your API KEY";
       var url = `https://api.geoapify.com/v1/geocode/autocomplete?text=${encodeURIComponent(currentValue)}&limit=5&apiKey=${apiKey}`;
       if (options.type) {
       	url += `&type=${options.type}`;
@@ -309,8 +309,8 @@ addressAutocomplete(document.getElementById("autocomplete-container-city"), (dat
   –––––––––––––––––––––––––––––––––––––––––––––––––– 
   Api Key pentru pozele de background si la fiecare card in functie de vreme*/
 
-const pexelsApiKey = "2sbdm4QbzmABcO3b2b2NgxVf2YAskU0EGfd4lwFv0GV1xjVxnKx92wPA";
-const apiKey = "4d8fb5b93d4af21d66a2948710284366";
+const pexelsApiKey = "YOUR API KEY";
+const apiKey = "YOUR API KEY";
 
 // Function to get a random photo URL from Pexels for a given city
 async function getPexelsPhoto(city) {
