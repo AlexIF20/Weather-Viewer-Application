@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- TODO: Please update the title of this HTML page according to your needs. -->
+    <title>Weather Forecast App</title>
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <section class="top-banner">
+      <div class="container" style="text-align: center">
+        <button><h1 class="heading">Weather App</h1></button>
+        <form>
+          <div
+            class="autocomplete-container"
+            id="autocomplete-container-city"
+            type="text"
+            placeholder="Search for a city"
+            autofocus
+          ></div>
+          <button type="submit">SUBMIT/HOME</button>
+          <span class="msg"></span>
+        </form>
+        <div class="loading-spinner" style="display: none">
+          <span class="loader"></span>
+        </div>
+      </div>
+    </section>
+
+    <section><h2 class="h2-favorite"></h2></section>
+
+    <section class="ajax-section">
+      <div class="container">
+        <ul class="cities"></ul>
+      </div>
+    </section>
+  </body>
+</html>
